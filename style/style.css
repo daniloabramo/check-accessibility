@@ -1,0 +1,49 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Inter:wght@100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Public+Sans:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+:root {
+  --background: rgb(252, 252, 252);
+  --text:rgb(10, 10, 10);
+}
+
+body {
+  background: var(--background);
+}
+
+header {
+  background: rgb(255, 212, 212);
+  display: flex;
+  position: fixed;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+}
+header .soon {
+  display: flex;
+  align-items: center;
+}
+header .soon img {
+  width: 2rem;
+  height: 2rem;
+  margin: 0.5rem;
+}
+header .soon h2 {
+  font-family: "Inter";
+  font-weight: 500;
+}
+header .menu {
+  margin: 0.5rem;
+}
+
+#menu {
+  display: none; /* Inicialmente oculto */
+}
+
+#menu.active {
+  display: block; /* Mostra o menu quando a classe active é aplicada */
+}/*# sourceMappingURL=style.css.map */

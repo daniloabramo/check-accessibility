@@ -1,0 +1,44 @@
+@import 'root';
+
+body{
+    background: var(--background);
+}
+
+header{
+    background: rgb(255, 212, 212);
+    display: flex;
+    position: fixed;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+
+    .soon{
+        display: flex;
+        align-items: center;
+        img{
+            width: 2rem;
+            height: 2rem;
+            margin: 0.5rem;
+        }
+
+        h2{
+            font-family: 'Inter';
+            font-weight: 500;
+        }
+    }
+
+    .menu{
+        margin: 0.5rem;
+    }
+
+
+}
+
+#menu {
+    display: none; /* Inicialmente oculto */
+}
+
+#menu.active {
+    display: block; /* Mostra o menu quando a classe active é aplicada */
+}
+
